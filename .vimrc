@@ -31,4 +31,5 @@ set guioptions-=T   " hide the toolbar
 filetype off
 filetype plugin indent on
 
-"let g:jedi#force_py_version = 3   " set jedi-vim to python 3
+" jsbeautify command mappings
+autocmd FileType javascript noremap <buffer> <c-f> :call JsBeautify()<cr>
