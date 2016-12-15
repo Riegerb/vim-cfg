@@ -5,3 +5,9 @@ root = true
 [**.js]
 indent_style = space
 indent_size = 4
+
+[**.html]
+indent_style = space
+indent_size = 2
+max_char = 79
+brace_style = expand

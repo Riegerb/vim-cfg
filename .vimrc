@@ -1,12 +1,9 @@
 " Brian Rieger's .vimrc
 
-"----------------------------------------------------------
-
 execute pathogen#infect()
 
 set nocompatible " disables vi compatibility, improves vim functionality
 syntax on	" enable syntax highlighting
-"filetype indent plugin on
 colorscheme badwolf "awesome colorscheme
 set background=dark
 set wildmenu	" improved command-line completion
@@ -28,8 +25,9 @@ set incsearch	" search as characters are entered
 set hlsearch	" highlight matches
 set guioptions-=T   " hide the toolbar
 
-filetype off
 filetype plugin indent on
+
+let g:flake8_cmd="/home/dreadlime/bin/flake8_py3" "overide vim-flake8 binary for python3
 
 " jsbeautify command mappings
 autocmd FileType javascript noremap <buffer> <c-f> :call JsBeautify()<cr>
