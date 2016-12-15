@@ -27,7 +27,13 @@ set guioptions-=T   " hide the toolbar
 
 filetype plugin indent on
 
+" HTML file settings
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+
 let g:flake8_cmd="/home/dreadlime/bin/flake8_py3" "overide vim-flake8 binary for python3
 
 " jsbeautify command mappings
 autocmd FileType javascript noremap <buffer> <c-f> :call JsBeautify()<cr>
+autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
+autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+autocmd FileType json noremap <buffer> <c-f> :call JsonBeautify()<cr>
