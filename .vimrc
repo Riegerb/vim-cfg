@@ -3,9 +3,13 @@
 execute pathogen#infect()
 
 set nocompatible " disables vi compatibility, improves vim functionality
+
 syntax on	" enable syntax highlighting
-colorscheme badwolf "awesome colorscheme
+
 set background=dark
+set termguicolors
+colorscheme spacegray "awesome colorscheme
+
 set wildmenu	" improved command-line completion
 set showcmd	" show partial commands in the last line of the screen
 set autoindent	" maintain indentation level when inserting on the next line
@@ -29,8 +33,6 @@ filetype plugin indent on
 
 " HTML file settings
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
-
-let g:flake8_cmd="/home/dreadlime/bin/flake8_py3" "overide vim-flake8 binary for python3
 
 " jsbeautify command mappings
 autocmd FileType javascript noremap <buffer> <c-f> :call JsBeautify()<cr>
