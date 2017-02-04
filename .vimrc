@@ -11,6 +11,7 @@ set t_Co=256 " force 256 colors
 colorscheme spacegray "awesome colorscheme
 
 set backspace=indent,eol,start " backspace to start of lines
+set cursorline
 set wildmenu	" improved command-line completion
 set showcmd	" show partial commands in the last line of the screen
 set autoindent	" maintain indentation level when inserting on the next line
