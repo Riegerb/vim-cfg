@@ -7,7 +7,7 @@ set nocompatible " disables vi compatibility, improves vim functionality
 syntax on	" enable syntax highlighting
 
 set background=dark
-set t_Co=256
+set t_Co=256 " force 256 colors
 colorscheme spacegray "awesome colorscheme
 
 set wildmenu	" improved command-line completion
@@ -20,6 +20,12 @@ set softtabstop=4	" number of spaces in tab when editing
 set shiftwidth=4    " ??
 set expandtab	" tabs are spaces
 set number	" show line numbers
+set laststatus=2  " always show status bar
+set statusline=%f\ %m\ %=L:%l/%L\ C:%c\ (%p%%)
+
+" set splits to appear below and to the right
+set splitbelow
+set splitright
 
 " search settings
 set ignorecase  " ignore case
@@ -30,6 +36,13 @@ set hlsearch	" highlight matches
 set guioptions-=T   " hide the toolbar
 
 filetype plugin indent on
+
+" ctrlp settings
+set wildignore+=*/.git/*
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]((node_modules|site-packages)|\.(git|hg|svn))$',
+  \ 'file': '\v\.(pyc|sw[op])$',
+  \ }
 
 " HTML file settings
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
