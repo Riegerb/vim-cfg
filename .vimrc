@@ -7,7 +7,7 @@ set nocompatible " disables vi compatibility, improves vim functionality
 syntax on	" enable syntax highlighting
 
 set background=dark
-set termguicolors
+set t_Co=256
 colorscheme spacegray "awesome colorscheme
 
 set wildmenu	" improved command-line completion
