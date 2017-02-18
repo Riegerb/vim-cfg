@@ -23,7 +23,7 @@ set shiftwidth=4    " ??
 set expandtab	" tabs are spaces
 set number	" show line numbers
 set laststatus=2  " always show status bar
-set statusline=%f\ %m\ %=L:%l/%L\ C:%c\ (%p%%)
+set statusline=%f\ %m\ %=%{fugitive#statusline()}\ \ \ L:%l/%L\ C:%c\ (%p%%)
 
 " set splits to appear below and to the right
 set splitbelow
@@ -48,6 +48,7 @@ let g:ctrlp_custom_ignore = {
 
 " HTML file settings
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2
 
 " jsbeautify command mappings
 autocmd FileType javascript noremap <buffer> <c-f> :call JsBeautify()<cr>
