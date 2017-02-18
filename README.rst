@@ -1,5 +1,5 @@
-First Time Set-Up
-=================
+Setup
+=====
 1. `git clone ...`
 2. Initialize and clone the submodules: cd into the new directory and run
    `git submodule update --init --recursive`
