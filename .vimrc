@@ -49,6 +49,8 @@ let g:ctrlp_custom_ignore = {
 " HTML file settings
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2
+autocmd FileType jinja setlocal shiftwidth=2 tabstop=2
+autocmd FileType htmljinja setlocal shiftwidth=2 tabstop=2
 
 " jsbeautify command mappings
 autocmd FileType javascript noremap <buffer> <c-f> :call JsBeautify()<cr>
